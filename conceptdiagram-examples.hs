@@ -19,7 +19,7 @@ data CurveProps = CurveProps
     }
 
 label' :: LabelProps -> String -> Diagram B R2
-label' p l = text l # fontSizeL (lFontSize p)
+label' p l = text l # fontSizeL (lFontSize p) # font "sans-serif"
     <> strutX (lStrutWidth p)
     <> strutY (lStrutHeight p)
 
